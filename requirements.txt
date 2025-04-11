@@ -1,0 +1,3 @@
+PIL
+eel
+google-generativeai
