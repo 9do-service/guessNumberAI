@@ -15,6 +15,9 @@ Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit
 安裝相關模組
 pip install -r requirements.txt
 
+需要先 set GOOGLE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GOOGLE_API_KEY 請到 https://aistudio.google.com/ 申請
+
 執行
 pyhton run.py
 
