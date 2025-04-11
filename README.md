@@ -19,7 +19,9 @@ pip install -r requirements.txt
 pyhton run.py
 
 執行之後會啟動一個 server 並開啟瀏覽器，請從下拉選單選擇其中一張範例影像，您也可以從 exp0001.png 挑選任一圖案進行測試。
+
 ![image](https://github.com/9do-service/guessNumberAI/blob/main/exp0001.png)
+
 一般這些影像是由專門的 API 產生影像圖檔，您也可以直接透過 API 取得這些影像，該範例僅為僅為模擬從其他 API 傳回影像，並從影像中得到影像裡的資訊。當您選擇一張 base64 編碼的影像字串後，按鈕的下方會顯示圖像的內容與 base64 編碼的影像字串，該影像字串會顯示在 Base64 PNG String 文字方框中，接下來按下 "將文字輸入框的資料解碼 按鈕，會呼叫 AI 進行解碼分析產生 Base64 PNG String 文字方框資料的解碼結果。
 
  
