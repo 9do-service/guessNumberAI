@@ -1,0 +1,137 @@
+/* 基本重置和全局樣式 */
+* {
+    box-sizing: border-box; /* 更直觀的盒子模型 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 使用更現代的字體 */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* 淺灰色背景 */
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* 限制最大寬度 */
+    margin: 20px auto; /* 頁面居中 */
+    background-color: #fff; /* 白色內容背景 */
+    padding: 30px;
+    border-radius: 8px; /* 圓角 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 細微陰影增加立體感 */
+}
+
+h1, h2 {
+    color: #0056b3; /* 標題顏色 */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee; /* 標題下劃線 */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 表單元素樣式 */
+.input-section,
+.output-section,
+.action-section {
+    margin-bottom: 25px; /* 區塊間距 */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+select,
+textarea,
+button {
+    width: 100%; /* 元素寬度佔滿容器 */
+    padding: 10px;
+    margin-bottom: 15px; /* 元素下方間距 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /* 基礎字體大小 */
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    height: 150px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* 等寬字體 */
+    word-wrap: break-word; /* 保留：長字串換行 */
+    white-space: pre-wrap;  /* 保留：處理換行和空格 */
+    line-height: 1.4;
+    background-color: #f9f9f9; /* 文本區淺背景 */
+    resize: vertical; /* 允許垂直調整大小 */
+}
+
+button {
+    background-color: #007bff; /* 主題藍色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 過渡效果 */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3; /* 懸停時顏色加深 */
+}
+
+/* 圖像渲染區域 */
+#image-renderer {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px dashed #ddd; /* 虛線邊框標示區域 */
+    min-height: 50px; /* 最小高度，避免空內容時塌陷 */
+    text-align: center; /* 圖像居中 */
+    background-color: #fafafa;
+}
+
+#image-renderer img {
+    max-width: 100%; /* 圖像最大寬度不超過容器 */
+    height: auto; /* 高度自動調整 */
+    display: block; /* 消除圖片下方空隙 */
+    margin: 0 auto; /* 使圖片在容器內水平居中 */
+    border: 1px solid #eee; /* 圖像細邊框 */
+}
+
+/* 結果顯示區域 */
+.result-area {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e9ecef; /* 結果區背景色 */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    min-height: 40px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* 等寬字體 */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.result-area .error {
+    color: #dc3545; /* 紅色表示錯誤 */
+    font-weight: bold;
+}
+
+.result-area .success {
+    color: #28a745; /* 綠色表示成功 */
+    font-weight: bold;
+}
+
+.result-area pre {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
